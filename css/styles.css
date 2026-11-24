@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    transition: 2s;
+    animation: joinpage 3s alternate;
+}
+
+@keyframes joinpage {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+header {
+
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: "JetBrains Mono", monospace;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+nav {
+    list-style-type: symbols("-");
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d1d1d;
+    transition: 2s;
+}
+
+nav a:hover {
+    color: #a22202;
+    transition: 2s;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+main {
+    background: linear-gradient(90deg, #e8bb8f, #961010);
+    box-shadow: 0 5px 5px rgba(2, 2, 2, 0.1);
+    font-family: "Inter Tight", sans-serif;
+    height: 1700px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 100px;
+    font-size: 50px;
+    color: aliceblue;
+    background: #000000;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.titlecolor {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+main p {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+main h2 {
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(90deg, #ffffff, #eeeeee);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.maintitle {
+    background-image: url(../img/img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 35px;
+}
+
+.blockmain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.GalleryBlock {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 60px
+}
+
+.Gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    /* Обрізає краї фото, зберігаючи пропорції */
+    border-radius: 10px;
+}
+
+.Gallery {
+    margin-top: 20px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.History {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url(../img/imagehistory.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Inter Tight", sans-serif;
+}
+
+.History h2 {
+    height: 50px;
+    width: 180px;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+.postchildhood h2 {
+    background: linear-gradient(60deg, #039b17, #106c01);
+    width: 130px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+summary::marker {
+    background: #ffffff;
+    content: "√";
+    transition: 2s;
+}
+
+details[open] summary::marker {
+    content: "✘";
+    transition: 2s;
+}
+
+details[open]>*:not(summary) {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+summary {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 10px;
+    margin: 20px;
+
+}
+
+details img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.postchildhood {
+    display: flex;
+    background: linear-gradient(160deg, #ffffff, #e2e2e2);
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.History .post-content {
+    width: 400px;
+}
+
+footer {
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "JetBrains Mono", monospace;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h1 {
+    padding: 20px;
+}
+
+footer nav {
+    list-style: none;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 2s;
+}
+
+footer nav a:hover {
+    color: #eccc90;
+    transition: 3s;
+    text-decoration: underline;
+}
