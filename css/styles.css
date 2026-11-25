@@ -155,6 +155,19 @@ main h2 {
     border-radius: 10px;
 }
 
+.postadultlife h2 {
+    background: linear-gradient(60deg, #d1ab04, #9c6b02);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.postfamilylife h2 {
+    background: linear-gradient(60deg, #d10404, #9c0202);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
 summary::marker {
     background: #ffffff;
     content: "√";
@@ -210,6 +223,21 @@ details img {
     border-radius: 10px;
 }
 
+.postadultlife {
+    display: flex;
+    background: linear-gradient(160deg, #ffffff, #e2e2e2);
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.postfamilylife {
+        display: flex;
+    background: linear-gradient(160deg, #ffffff, #e2e2e2);
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
 .History .post-content {
     width: 400px;
 }
