@@ -8,14 +8,9 @@ body {
 
 @keyframes joinpage {
     0% {
-        transform: translateY(0px);
+        transform: translateY(-35px);
         opacity: 0;
     }
-
-    50% {
-        transform: translateY(20px)
-    }
-
     100% {
         opacity: 1;
         transform: translateY(0px)
