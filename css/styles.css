@@ -113,6 +113,7 @@ main h2 {
     object-fit: cover;
     /* Обрізає краї фото, зберігаючи пропорції */
     border-radius: 10px;
+    transition: 2s;
 }
 
 .Gallery {
@@ -266,4 +267,11 @@ footer nav a:hover {
     color: #eccc90;
     transition: 3s;
     text-decoration: underline;
+}
+
+
+.Gallery img:hover {
+width: 500px;
+height: 400px;
+transition: 4s ease-in-out;
 }
